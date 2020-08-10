@@ -1,11 +1,10 @@
-console.log('Node Server is running on Android!');
+console.log('Node Server is Live!'); 
+
 var http = require('http');
-http.createServer(function (req, res) {
-	if (req.method === 'GET') {
-		res.write('Hello World, Welcome to WeJapa Internships.')}
-	else if (req.method === 'POST') {
-		var name = window.prompt('what is your name?')
-		res.write(`Hello ${name}, Welcome to WeJapa Internship`)};
+var app = require('./app');
+
+http.createServer( function (req, res) {
+	res.write('notes app server is live!');
 	res.end();
 }).listen(3000, 'localhost');
-	
+

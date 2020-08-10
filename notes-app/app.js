@@ -1,4 +1,9 @@
-const fs = require('fs');
+function notes(){
+	console.log('notes started!');
+}
 
-fs.readFile('notes.txt');
-console.log(fs);
+
+module.exports.notes = notes;
+
+
+
