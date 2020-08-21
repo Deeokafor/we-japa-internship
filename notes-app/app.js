@@ -3,7 +3,7 @@ var fs = require('fs');
 var readline = require('readline');
 
 
-fs.readFile('notes.txt', 'utf8', function(err, data) {
+fs.readFile('notes.txt', 'utf-8',  function(err, data) {
 	if (err) throw err;
 	console.log(data);
 });
