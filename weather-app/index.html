@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" title="" type="text/css" />
+    <title>Wejapa weather app</title>
+</head>
+<body>
+    <main>
+        <section id="title-map">
+            <h1 id="title">Wejapa weather app</h1>
+            <div id="map"></div>
+        </section>
+
+        <section id="utils">
+            <div id="weather-info">
+                {display weather info here}
+            </div>
+            <div id="geocode">
+                {display geocode here}
+            </div>
+            <form id="get-city" action="" method="get" accept-charset="utf-8">
+                <input type="text" name="city-name" id="city-name" placeholder="enter name of city" />
+            </form>
+        </section>
+    </main>
+    <script src="./script/maps.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5YPu4qEX8juOYe_yOUGIwXiH2eyis2g8&callback=initMap">
+    </script>
+</body>
+</html>
