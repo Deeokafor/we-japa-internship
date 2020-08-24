@@ -17,17 +17,29 @@
             <div id="weather-info">
                 {display weather info here}
             </div>
-            <div id="geocode">
-                {display geocode here}
-            </div>
+            <span id="geocode">
+                you are at latitude <i id="lat">...</i>  and longitude <i id="lng">...</i>
+            </span>
             <form id="get-city" action="" method="get" accept-charset="utf-8">
                 <input type="text" name="city-name" id="city-name" placeholder="enter name of city" />
             </form>
         </section>
     </main>
-    <script src="./script/maps.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5YPu4qEX8juOYe_yOUGIwXiH2eyis2g8&callback=initMap">
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 8,
+                center: {
+                    lat: 6.465422,
+                    lng: 3.406448
+                }
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA8abKjFPKvdhhrnV2k7yBkNBHPX50Huw&callback=initMap">
     </script>
 </body>
 </html>

@@ -1,13 +1,10 @@
-(function initMap() {
-    var nigeria = {
-        lat: 9.0820,
-        long: 8.6753
-    };
+function initMap() {
+    var options = {
+        zoom: 8,
+        center: {lat:6.465422,lng:3.406448}
+    }
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: nigeria
-    });
+    var map = new google.maps.Map(document.getElementById('map'), options);
     
     var marker = new google.maps.Marker({position: nigeria, map: map});
-})();
+}

@@ -1,62 +1,86 @@
-/*
-@font-face {
-  font-family: poppins;
-  src: url(fonts/Poppins/Poppins-Regular.ttf);
-}
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    background: black;
-    outline: 1px solid white;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-
-#title {
-    font-size: 2em;
-    text-transform: capitalize;
-    padding: 24px;
-}
-
-#title-map {
-    width: 100vw;
-    height: 60vh;
-    background: linear-gradient(45deg, rgba(255,255,255,0.05), rgba(255,255,255,0.15));
-    background-repeat: no-repeat;
-}
-
-#utils {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    align-content: baseline;
-    flex-flow: nowrap column;
-    outline: none;
-}
-
-#utils div {
-    width: 80%;
-    height: 25px;
-    padding: 24px;
-    margin: 10px;
-}
-
-#utils, #city-name {
-    font-size: 1rem;
-    color: rgba(255,255,255,0.6);
-}
-
-form {
-    outline: none;
-}
-
-#city-name {
-    display: inline-flex;
-    width: 80%;
-    border: none;
-    padding: 5px 10px;
-}
+    /*
+    @font-face {
+      font-family: poppins;
+      src: url(fonts/Poppins/Poppins-Regular.ttf);
+    }
+    */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+    
+    * {
+        padding: 0;
+        margin: 0;
+        background: black;
+        outline: 1px solid white;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #title {
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding: 24px;
+        letter-spacing: 0.3px;
+    }
+    
+    #title-map {
+        width: 100vw;
+        height: 60vh;
+        background: linear-gradient(45deg, rgba(255,255,255,0.05), rgba(255,255,255,0.15));
+        background-repeat: no-repeat;
+    }
+    
+    #utils {
+        display: flex;
+        align-items: center;
+        flex-flow: nowrap column;
+        outline: none;
+        padding: 20px;
+    }
+    
+    #utils div {
+        padding: 24px;
+        font-size: 0.9em;
+    }
+    
+    #utils div, form {
+        width: 80%;
+        margin-top: 24px;
+    }
+    
+    #weather-info {
+        height: 40px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        outline: none;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+        color: rgba(255,255,255,0.8);
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+    
+    #geocode {
+        display: block;
+        width: 80%;
+        outline: none;
+        padding: 0;
+        margin: 5px 0;
+    }
+    
+    #geocode i {
+        outline: 0px solid white;
+    }
+    
+    #utils, #city-name {
+        color: rgba(255,255,255,0.6);
+    }
+    
+    
+    #city-name {
+        display: inline-flex;
+        width: 80%;
+        border: none;
+        padding: 5px 10px;
+    }
